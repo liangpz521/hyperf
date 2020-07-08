@@ -13,8 +13,8 @@ return [
     'default' => [
         'host' => 'localhost',
         'port' => 5672,
-        'user' => 'guest',
-        'password' => 'guest',
+        'user' => 'eboss',
+        'password' => 'eboss',
         'vhost' => '/',
         'pool' => [
             'min_connections' => 1,

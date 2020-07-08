@@ -35,7 +35,8 @@ class DemoController
     public function index()
     {
         $this->demoSender->send(['num'=>100,'broker'=>'李东']);
-        $num = $this->userService->add(200, 400);
+//        $num = $this->userService->add(200, 400);
+        $num = 100;
         return [
             'num' => $num
         ];

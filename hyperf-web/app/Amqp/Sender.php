@@ -16,7 +16,7 @@ use Hyperf\Utils\ApplicationContext;
 class Sender
 {
     public function send($data){
-        $message = new DemoProducer(1);
+        $message = new DemoProducer($data);
         $producer = ApplicationContext::getContainer()->get(Producer::class);
         $result = $producer->produce($message);
     }
