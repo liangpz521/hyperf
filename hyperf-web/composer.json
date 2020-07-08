@@ -19,7 +19,7 @@
         "hyperf/config": "~2.0.0",
         "hyperf/db-connection": "~2.0.0",
         "hyperf/framework": "~2.0.0",
-        "hyperf/guzzle": "~2.0.0",
+        "hyperf/guzzle": "^2.0",
         "hyperf/http-server": "~2.0.0",
         "hyperf/logger": "~2.0.0",
         "hyperf/memory": "~2.0.0",
@@ -31,7 +31,7 @@
         "hyperf/rpc-server": "~2.0.0",
         "hyperf/constants": "~2.0.0",
         "hyperf/async-queue": "~2.0.0",
-        "hyperf/amqp": "~2.0.0",
+        "hyperf/amqp": "^2.0",
         "hyperf/model-cache": "~2.0.0",
         "hyperf/elasticsearch": "~2.0.0",
         "hyperf/tracer": "~2.0.0"

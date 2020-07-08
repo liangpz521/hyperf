@@ -7,6 +7,7 @@ use Hyperf\Di\Annotation\Inject;
 use Hyperf\HttpServer\Annotation\AutoController;
 use App\JsonRpc\UserServiceInterface;
 use App\JsonRpc\BrokerServiceInterface;
+use App\Amqp\Sender;
 
 /**
  * @AutoController()
@@ -25,8 +26,15 @@ class DemoController
      */
     private $brokerService;
 
+    /**
+     * @Inject()
+     * @var Sender
+     */
+    private $demoSender;
+
     public function index()
     {
+        $this->demoSender->send(['num'=>100,'broker'=>'李东']);
         $num = $this->userService->add(200, 400);
         return [
             'num' => $num
